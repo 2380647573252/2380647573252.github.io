@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../2.27/jq.js">
+		</script>
+		<script type="text/javascript" src="../3.12/underscore.js">
+		</script>
+	</head>
+	<body>
+		<div id="div">
+			
+		</div>
+	</body>
+</html>
+<script type="text/template" id="as">
+	<embed src="Taylor Swift - Love Story.mp3" controls="controls" loop="1" autostart="false" hidden="true" id="audio" style="width: 0px; height: 0px; position: absolute;"></embed>
+		<div class="wrapper">
+				<div class="headersticky">
+					<div class="navbar">
+						<div class="container">
+								<div class="brand clearfix">
+									<a href="#" style="line-height: 61px;">
+										<img src="<%= heao[2].src %>" class="logo"/>
+									</a>
+								</div>
+								<div class="collapse">
+								<div class="menu-cont ">
+									<ul class=" ula clearfix">
+											<% for(var a=0; a<heao[0].head.length; a++){ %>
+													<li class="lia">
+														<a href="javascript:;">
+														<%= heao[0].head[a].name %>
+														</a>
+													</li>
+												<% } %>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<!--===============================================-->
+			<div class="lunbo">
+				<div class="lunboa">
+					<div class="lunbob" id="lunbob">
+							<% for(var i=0; i<heao[1].lunbo.length; i++){ %>
+							<li class="lib">
+							<img src="<%= heao[1].lunbo[i].sra %>"/>
+							</li>
+							<% } %>
+							<ul class="ulb">
+								<li></li>
+								<li></li>
+							</ul>
+							<div></div>
+							<div></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------------------------->
+			<div class="container">
+				<div class="index">
+					<div>
+						<img src="<%= heao[3].srb %>" class="indeximg"/>
+					</div>
+					<div class="text-center">
+						<h1><%= heao[4].texta %></h1>
+						<h2><%= heao[5].textb %></h2>
+					</div>
+				</div>
+			</div>
+			<p class="text-index"><%= heao[6].textc %></p>
+			<div class="shaow">
+				<div class="about collapse">
+					<% for(var b=0; b<heao[7].margin.length; b++){ %>
+					<p class="no-margin"><%= heao[7].margin[b].padding %></p>
+					<% } %>
+				</div>
+			</div>
+			<div class="culture">
+				<div class="hidden">
+					<div class="biglogo">
+							<% for(var d=0; d<heao[8].biglogo.length; d++){ %>
+								<a href="#">
+								<img src="<%= heao[8].biglogo[d].logo[0].big %>" class="image"/>
+								<span class="oppo"><%= heao[8].biglogo[d].logo[1].textd %></span>
+							
+							</a>
+							<% } %>
+					</div>
+					<div class="smalllogo biglogo">
+						<% for(var d=0; d<heao[9].smalllogo.length; d++){ %>
+								<a href="#">
+								<img src="<%= heao[9].smalllogo[d].logo[0].big %>" class="image"/>
+								<span class="oppo"><%= heao[9].smalllogo[d].logo[1].textd %></span>
+							
+							</a>
+							<% } %>
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------------------------------------------->
+			<div id="bus">
+				<div class="conv">
+					<div class="business">
+						<h1 class="tittle">
+							<%= heao[10].kai %>
+							<span><%= heao[11].oppo %></span>
+							<%= heao[12].shang %>
+						</h1>
+						<h2><%= heao[13].book %></h2>
+						<div class="teamwork">
+							<p>
+								<span class="item-font"><%= heao[14].itemfont %></span>
+								<%= heao[15].p1 %>
+							</p>
+							<p><%= heao[16].p2 %></p>
+							<p>
+								<span class="item-font"><%= heao[17].p3 %></span>
+							</p>
+							<% for(var v=0; v<heao[18].pp.length; v++){ %>
+								<p>
+									<span class="item-font"><%= heao[18].pp[v].p4[0].p %></span>
+										<%= heao[18].pp[v].p4[1].span %>
+								</p>
+							<% } %>
+							<p><%= heao[19].p5 %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------------------------------------->
+			<div class="footer">
+				<div class="footera">
+					<div class="brand">
+						<div class="row clearfix">
+							<div class="colsm">
+								<% for(var i=0; i<heao[20].list.length; i++){ %>
+								<div class="posts">
+									<div class="margin-no">
+										<h2><%= heao[20].list[i].h2 %></h2>
+									</div>
+									<ul class="list">
+										<% for(var a=0; a<heao[20].list[i].li.length; a++){ %>
+										<li>
+											<a href="#"><%= heao[20].list[i].li[a].litext %></a>
+										</li>
+										<% } %>
+									</ul>
+								</div>
+								<% } %>
+								<!------------------------------>
+								<div class="color">
+									<% for(var d=0; d<heao[21].vivo.length; d++){ %>
+									<p><%= heao[21].vivo[d].p %></p>
+									<% } %>
+								</div>
+								<div class="mdmargin">
+								<div>
+									<a href="javascript:;" class="display-block">
+										<img src="img/pian.png" class="changpian"/>
+										<img src="<%= heao[22].logofooter %>" class="logofooter" width="200" />
+										<span><%= heao[23].logospan %></span>
+									</a>
+								</div>
+								<% for(var i=0; i<heao[24].erwe.length; i++){ %>
+								<div class="colxs">
+									<img src="<%= heao[24].erwe[i].p1[0].img %>"/>
+									<p><%= heao[24].erwe[i].p1[1].p %></p>
+								</div>
+								<% } %>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="contleft">
+						<div class="colorblack clearfix">
+							<div class="xiaomi clearfix">
+								<%= heao[25].colorback %>
+							</div>
+							<div class="xiaohua clearfix">
+								<% for(var i=0; i<heao[26].copy.length; i++){ %>
+								<p><%= heao[26].copy[i].p1 %></p>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="qwp">
+				<div class="arr">
+					
+					<div class="as">
+						◇
+					</div>
+				</div>
+			</div>
+		</div>
+</script>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			type:"get",
+			url:"wyy.json",
+			async:true,
+			success:function(data){
+				fn(data)
+				console.log(data[8].biglogo[1].logo[0])
+			}
+		});
+		function fn(dat){
+			var arr=dat;
+			var ass=document.getElementById("as").innerHTML;
+			var sto=_.template(ass);
+			var tem=sto({heao:arr});
+			document.getElementById("div").innerHTML=tem;
+		}
+	})
+</script>
+<script>
+	$(function(){
+		setTimeout(function(){
+			var index=0;
+		var t=null;
+		t=setInterval(function(){fn()},2000)
+		function fn(){
+			index++;
+			if(index>1){
+				index=0
+			}
+			
+			$(".lunbob>.lib").eq(index).show().siblings(".lib").hide().siblings("ul").children("li").eq(index).css("opacity","0.9").siblings("li").css("opacity","0.5")
+		}
+		$(".lunbob").hover(function(){
+			clearInterval(t)
+		},function(){
+			t=setInterval(function(){fn()},2000)
+		})
+			$(".lunbob>.ulb>li").click(function(){
+			var m=$(this).index()
+			$(this).css("opacity","0.9").siblings("li").css("opacity","0.5").parent("ul").siblings(".lib").eq(m).show().siblings(".lib").hide()
+		})
+			$(".lunbob>div").click(function(){
+			var num=$(this).index(".lunbob>div")
+			switch (num){
+				case 0:
+				index--;
+				if(index<0)(index=1)
+				$(this).siblings(".lib").eq(index).show().siblings(".lib").hide().siblings(".ulb").children("li").eq(index).css("opacity","0.9").siblings("li").css("opacity","0.5")
+					break;
+				case 1:
+					index++;
+				if(index>1)(index=0)
+				$(this).siblings(".lib").eq(index).show().siblings(".lib").hide().siblings(".ulb").children("li").eq(index).css("opacity","0.9").siblings("li").css("opacity","0.5")
+					break;
+			}
+		})
+			
+//			--------------------------------------------------------
+			var top=0;
+			var bushu=90;
+			$("#qwp").click(function(){
+				var top=$(document).scrollTop();
+				var buchang=top/bushu;
+				t=setInterval(function(){
+					top=top-buchang
+					if(top<=0){
+						clearInterval(t)
+						$(document).scrollTop(0);
+					}
+					$(document).scrollTop(top)
+				},1000/60)
+			})
+//			------------------------------------------------------------
+				$(".ula>.lia").click(function(){
+					var n=$(this).index(".lia")
+					switch (n){
+						case 0:
+						$(document).scrollTop(0)
+							break;
+						case  1:
+						$(document).scrollTop(590)
+							break;
+						case  2:
+						$(document).scrollTop(1360)
+							break;
+						case  4:
+						$(document).scrollTop(1910)
+							break;
+						case  6:
+						$(document).scrollTop(2300)
+							break;
+					}
+				})
+		},100)
+	})
+</script>
